@@ -16,25 +16,54 @@
 <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Open+Sans">
     <style>
-      body {
-        font-family: 'Open Sans', serif;
-        font-size: 20px;
-      }
-     
-    a:link,a:visited {
-   color: Black;
-   background-color: #FFFFFF;
-   text-decoration: none;
-   target-new: none;
-  }
-  a:hover {
-   color: Black;
-   background-color: White;
-   text-decoration: underline;
-   target-new: none;
-  }
-     
-     
+      * {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 90px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+#navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+#navbar-right {
+  float: right;
+}
     </style>
 
 
@@ -42,7 +71,20 @@
 
  </head> 
 <body> 
+ 
+<div id="navbar">
+  <a href="https://papagames.netlify.app/" id="logo"> <img src="favicon.png" width=50" height=50"> Papa Games <img src="https://api.hostip.info/flag.php" style="width: 54px; height: 27px; border: none;" alt="Country Flag" />
+</a>
+  <div id="navbar-right">
+     <a  class="active" href="https://papagames.netlify.app/"> <i class="fas fa-home"></i> Home</a>
+   <a href="https://papagames.netlify.app/search"><i class="fas fa-search"></i> Search</a>
+	  	  <a href="https://papagames.netlify.app/policies"><i class="fas fa-list-alt"></i> Policies</a>
+      <a  href="https://papagames.netlify.app/account"> <img src="https://papagames.netlify.com/images/icon.papa.png" alt="icon.papa.png" width="20" height="20">  My papa account</a>
+          <a href="https://papagames.tribe.so"><i class="fas fa-user"></i> Community </a>
+	 
+	      </div>
+</div>
+<div style="margin-top:210px;padding:15px 15px 2500px;font-size:30px">
 
-<h1> Apk test </h1>
 </body>
  </html>
